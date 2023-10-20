@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            background-color: gray;
+            width: 500px;
+            border-collapse: collapse;
+            color: white;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+           
+        }
+        a{
+            font-weight: bold;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        a:visited{
+            color: white;
+        }
+        a:active{ color: yellow;
+            
+           
+        }
+        .sp{
+            background-image: linear-gradient(to right, rgb(51, 49, 49), rgba(240, 42, 42, 0.801), rgba(212, 194, 194, 0.767));
+            color: white;
+            text-shadow: 1px 2px 2px black;
+        }
+        .mg{
+            background-image:linear-gradient(to right, red, white);
+            color: white;
+            text-shadow: 1px 2px 2px black;
+        }
+        .rj{
+            background-image: linear-gradient(to right, rgb(42, 138, 177), white);
+            color: white;
+            text-shadow: 1px 2px 2px black;
+        }
+      
+
+         thead, tfoot{
+            background-color: gray;
+            color: white;
+         }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+
+        <!-- ANATOMIA PARA TABELAS GRANDES 
+            TABLE
+                THEAD
+                    TR, TD, TH 
+                TBORY
+                    TR, TD, TH 
+                TFOOT
+                    TR, TD, TH 
+        
+        -->
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Estado</th>
+                    <th>População</th>
+                </tr>
+            </thead>
+                <tr>
+                    <td class="sp"><a href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo_(estado)" target="_blank">São Paulo</a></td>
+                    <td>44 420 459</td>
+                </tr>
+                <tr>
+                    <td class="mg"><a href="https://pt.wikipedia.org/wiki/Minas_Gerais" target="_blank">Minas Gerais</a></td>
+                    <td>20 538 718</td>
+                </tr>
+                <tr>
+
+                    <td class="rj"><a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro_(estado)" target="_blank">Rio de Janeiro</a></td>
+                    <td>16 054 524</td>
+
+                </tr>
+            <tbody>
+
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th>
+                        Total de Habitantes
+                    </th>
+                    <td>81 013 701</td>
+                </tr>
+            </tfoot>
+
+            
+        </table>
+
+
+</body>
+</html>
