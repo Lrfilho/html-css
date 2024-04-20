@@ -7,13 +7,23 @@
     <style>
         * {
             font-family: Arial, Helvetica, sans-serif;
-            text-shadow: 0px 2px  2px;
+            
         }
     </style>
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    
+    <!--Função action é para enviar informaçoes para alguma lionguagem de programação  -->
+
+    <form action="cadastro.php" autocomplete="off">
+        <!-- o Label serve para vincular a palavra a caixa de selecão -->
+        <p><label for="inome">Nome</label>: 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome</label>: 
+            <input type="text" name="sobrenome" id="isobrenome" ></p>
+        <p><input type="submit" value="Cadastrar"></p>
+
+    </form>
     
 </body>
 </html>
