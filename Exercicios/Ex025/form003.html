@@ -6,7 +6,7 @@
     <title>Formulário</title>
     <style>
         * {
-            background-color: red;
+            font-family: Arial, Helvetica, sans-serif;
         }
     </style>
 </head>
@@ -16,13 +16,15 @@
         <form action="cadastro.php"  method="get" autocomplete="on"></form>
 
     <p>   
-        <label for="inome">Nome</label>
-        <input type="text" name="Nome" id="inome" required maxlength="30"
-        placeholder="Nome completo" autocomplete="name">
-        <p>
-            <input type="submit" value="Cadastrar">
-            <input type="reset" value="Limpar">
-        </p>
+        <form action="cadastro.php"  method="post" autocomplete="on">
+            <!-- o Label serve para vincular a palavra a caixa de selecão -->
+            <p><label for="iusu">Usuário</label>: 
+                <input type="text" name="usu" id="iusu" required minlength="6" maxlength="15" size="11" placeholder="Nome do Usuário" autocomplete="username"></p>
+            <p><label for="isen">Senha</label>: 
+                <input type="password" name="sen" id="isen" required minlength="8" maxlength="15" size="8" placeholder="Senha" autocomplete="current-password"></p>
+            <p><input type="submit" value="Enviar">
+            <input type="reset" value="Limpar"></p>
+    
         
     </p> 
 
