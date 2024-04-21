@@ -15,15 +15,15 @@
     <h1>Meu primeiro formulário</h1>
     <!--Função action é para enviar informaçoes para alguma lionguagem de programação  -->
 
-    <form action="cadastro.php"  method="post" autocomplete="off">
+    <form action="cadastro.php"  method="post" autocomplete="on">
         <!-- o Label serve para vincular a palavra a caixa de selecão -->
-        <p><label for="inome">Nome</label>: 
-            <input type="text" name="nome" id="inome"></p>
-        <p><label for="isobrenome">Sobrenome</label>: 
-            <input type="text" name="sobrenome" id="isobrenome" ></p>
-        <p><input type="submit" value="Cadastrar"></p>
+        <p><label for="iusu">Usuário</label>: 
+            <input type="text" name="usu" id="iusu" required minlength="6" maxlength="15" size="11" placeholder="Nome do Usuário" autocomplete="username"></p>
+        <p><label for="isen">Senha</label>: 
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="15" size="8" placeholder="Senha" autocomplete="current-password"></p>
+        <p><input type="submit" value="Enviar">
+        <input type="reset" value="Limpar"></p>
 
-    </form>
     
 </body>
 </html>
