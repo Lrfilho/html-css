@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            background-color: gray;
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+            
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+
+
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            color: white;
+           
+        }
+        a{
+            font-weight: bold;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        a:visited{
+            color: white;
+        }
+        a:active{ color: yellow;
+            
+           
+        }
+        .sp{
+            background-image: linear-gradient(to right, rgb(51, 49, 49), rgba(240, 42, 42, 0.801), rgba(212, 194, 194, 0.767));
+            color: white;
+            text-shadow: 1px 2px 2px black;
+        }
+        .mg{
+            background-image:linear-gradient(to right, red, white);
+            color: white;
+            text-shadow: 1px 2px 2px black;
+        }
+        .rj{
+            background-image: linear-gradient(to right, rgb(42, 138, 177), white);
+            color: white;
+            text-shadow: 1px 2px 2px black;
+        }
+        .ba{
+            background-image: linear-gradient(to left, red, white,  blue);
+            color: white;
+            text-shadow: 1px 2px 2px black;
+        }
+
+        .pr{
+            background-image: linear-gradient(to left, rgb(8, 94, 8), white, rgb(8, 94, 8));
+            color: white;
+            text-shadow: 1px 2px 2px black;
+        }
+
+        .rs{
+            background-image: linear-gradient(to right, green, rgba(255, 0, 0, 0.719), rgb(255, 255, 0));
+            color: white;
+            text-shadow: 1px 2px 2px black;
+
+        }
+
+        .pe{
+            background-image: linear-gradient(to right, blue, blue, white, white);
+            color: white;
+            text-shadow: 1px 2px 2px black;
+        }
+
+        .ce{
+            background-image: linear-gradient(to right, rgba(0, 128, 0, 0.685), yellow);
+            color: white;
+            text-shadow: 1px 2px 2px black;
+        }
+
+        .pa{
+            background-image: linear-gradient(to right, red, white, red);
+            color: white;
+            text-shadow: 1px 2px 2px black;
+           
+        }
+
+        .sc{
+            background-image: linear-gradient(to right, red, rgb(90, 252, 90), rgba(255, 255, 255, 0.692));
+
+        } 
+        thead tr th{
+                position: sticky;
+                top: -1px;
+                background-color: gray;
+        }
+        
+    
+
+        /* tbody tr:nth-child(odd){
+            background-color: red
+        }
+        tbody tr:nth-child(even){
+            background-color: orange
+        } */
+
+         thead, tfoot{
+            background-color: gray;
+            color: white;
+         }
+         td.num{
+            text-align: right;
+         }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+
+        <!-- ANATOMIA PARA TABELAS GRANDES 
+            TABLE
+                THEAD
+                    TR, TD, TH 
+                TBORY
+                    TR, TD, TH 
+                TFOOT
+                    TR, TD, TH 
+        
+        -->
+
+        <table>
+            <caption>População da Unidades Federativa</caption>
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 350px;">Estado</th>
+                    <th scope="col" style="width: 100px;">População</th>
+                </tr>
+            </thead>
+                <tr>
+                    <td class="sp"><a href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo_(estado)" target="_blank">São Paulo</a></td>
+                    <td class="num">44.420.459</td>
+                </tr>
+                <tr>
+                    <td class="mg"><a href="https://pt.wikipedia.org/wiki/Minas_Gerais" target="_blank">Minas Gerais</a></td>
+                    <td class="num">20.538.718</td>
+                </tr>
+                <tr>
+
+                    <td class="rj"><a href="https://pt.wikipedia.org/wiki/Bahia" target="_blank">Rio de Janeiro</a></td>
+                    <td class="num">16.054.524</td>
+
+                </tr>
+                <tr>
+
+                    <td class="ba"><a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro_(estado)" target="_blank">Bahia</a></td>
+                    <td class="num">14.136.417</td>
+
+                </tr>
+                <tr>
+
+                    <td class="pr"><a href="https://pt.wikipedia.org/wiki/Paran%C3%A1" target="_blank">Paraná</a></td>
+                    <td class="num">11.443.208</td>
+
+                </tr>
+                <tr>
+
+                    <td class="rs"><a href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Sul" target="_blank">Rio Grande do Sul
+                    </a></td>
+                    <td class="num">10.880.506</td>
+
+                </tr>
+                <tr>
+
+                    <td class="pe"><a href="https://pt.wikipedia.org/wiki/Pernambuco" target="_blank">Pernambuco
+                    </a></td>
+                    <td class="num">9.058.155</td>
+
+                </tr>
+                <tr>
+
+                    <td class="ce"><a href="https://pt.wikipedia.org/wiki/Cear%C3%A1" target="_blank">Ceará</a></td>
+                    <td class="num">8.791.688</td>
+
+                </tr>
+                <tr>
+
+                    <td class="pa"><a href="https://pt.wikipedia.org/wiki/Par%C3%A1" target="_blank">Pará</a></td>
+                    <td class="num">8.116.132</td>
+
+                </tr>
+                <tr>
+
+                    <td class="sc"><a href="https://pt.wikipedia.org/wiki/Santa_Catarina" target="_blank">Santa Catarina</a></td>
+                    <td class="num">7.609.601</td>
+
+                </tr>
+                <tr>
+
+                     <td class="rj"><a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro_(estado)" target="_blank">Rio de Janeiro</a></td>
+                    <td>16 054 524</td>
+
+                </tr>
+                <tr>
+
+                    <td class="rj"><a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro_(estado)" target="_blank">Rio de Janeiro</a></td>
+                    <td>16 054 524</td>
+
+                </tr>
+                <tr>
+
+                    <td class="rj"><a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro_(estado)" target="_blank">Rio de Janeiro</a></td>
+                    <td>16 054 524</td>
+
+                </tr>
+                <tr>
+
+                    <td class="rj"><a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro_(estado)" target="_blank">Rio de Janeiro</a></td>
+                    <td>16 054 524</td>
+
+                </tr>
+                <tr>
+
+                    <td class="rj"><a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro_(estado)" target="_blank">Rio de Janeiro</a></td>
+                    <td>16 054 524</td>
+
+                </tr>
+                <tr>
+
+                    <td class="rj"><a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro_(estado)" target="_blank">Rio de Janeiro</a></td>
+                    <td>16 054 524</td>
+
+                </tr>
+                <tr>
+
+                    <td class="rj"><a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro_(estado)" target="_blank">Rio de Janeiro</a></td>
+                    <td>16 054 524</td>
+
+                </tr> 
+            <tbody>
+
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th scope="row">
+                        Total de Habitantes
+                    </th>
+                    <td class="num"><strong>151 049 408</strong></td>
+                </tr>
+            </tfoot>
+            
+
+            
+        </table>
+
+
+</body>
+</html>
